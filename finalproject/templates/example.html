@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Font Awesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <title>Voting Project</title>
+
+    <style>
+        h1 {
+            text-align: center;
+            color: #007bff; /* Blue color for the title */
+            margin-bottom: 30px;
+            animation: slideIn 1s ease-in-out; /* Slide in animation */
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .background-container {
+            background-image: url('https://media.istockphoto.com/id/1258633187/vector/online-vote.jpg?s=612x612&w=0&k=20&c=7eOLMUx6_EKkXPjMrElvFYkz2x0rdShD8DNAlrff6-E=');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 100px 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 1s ease-in-out; /* Fade in animation */
+        }
+
+        /* Define keyframe animations */
+        @keyframes slideIn {
+            from {
+                transform: translateY(-50px); /* Start from above */
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0); /* Slide down */
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0; /* Start from transparent */
+            }
+            to {
+                opacity: 1; /* Fade in */
+            }
+        }
+        h1 {
+            text-align: center;
+            color: #007bff; /* Blue color for the title */
+            margin-bottom: 30px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .background-container {
+            background-image: url('https://media.istockphoto.com/id/1258633187/vector/online-vote.jpg?s=612x612&w=0&k=20&c=7eOLMUx6_EKkXPjMrElvFYkz2x0rdShD8DNAlrff6-E=');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 100px 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .nav-bar {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .nav-button {
+            padding: 10px 20px;
+            background-color: #c5d9ef; /* Blue color for buttons */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            margin: 0 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-button:hover {
+            background-color: #0056b3; /* Darker shade of blue on hover */
+        }
+
+        .welcome-msg {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin-bottom: 30px;
+        }
+
+        .welcome-msg h2 {
+            color: #007bff; 
+            text-align: center;/* Blue color for heading */
+        }
+
+        h5 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333; /* Dark grey color for paragraphs */
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 30px;
+        }
+
+        .feature {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            width: 45%;
+        }
+
+        .feature h3 {
+            color: #d4e0ec; /* Blue color for feature titles */
+            margin-bottom: 10px;
+        }
+
+        .feature p {
+            color: #290707; /* Dark grey color for feature descriptions */
+        }
+
+        /* Adjustments for logo */
+        .logo {
+            display: block;
+            margin: 0 auto 20px;
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="background-container">
+    <div class="container">
+        <img src="https://media.istockphoto.com/id/1258633187/vector/online-vote.jpg?s=612x612&w=0&k=20&c=7eOLMUx6_EKkXPjMrElvFYkz2x0rdShD8DNAlrff6-E=" alt="Logo" class="logo">
+        <h1>Voting Website</h1>
+        <div class="nav-bar">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <button class="nav-button">
+                                <a class="nav-link" href="{% url 'votinwebsite:partyregistration' %}"><i class="fas fa-users"></i> Party Registration</a>
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-button">
+                                <a class="nav-link" href="{% url 'votinwebsite:login' %}"><i class="fas fa-sign-in-alt"></i> Login</a>
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-button">
+                                <a class="nav-link" href="{% url 'votinwebsite:signup' %}"><i class="fas fa-user-plus"></i> Signup</a>
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-button">
+                                <a class="nav-link" href="{% url 'votinwebsite:contact' %}"><i class="fas fa-envelope"></i> Contact</a>
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-button">
+                                <a class="nav-link" href="{% url 'votinwebsite:result' %}"><i class="fas fa-poll"></i> Result</a>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div class="welcome-msg">
+            <h2>Welcome Voter!</h2>
+            <p>participating in the voting process. Your voice matters!</p>
+        </div>
+        <h5>Make your voice heard! Participate in the voting process and help shape the future.</h5>
+       
+    </div>
+</div>
+</body>
+</html>

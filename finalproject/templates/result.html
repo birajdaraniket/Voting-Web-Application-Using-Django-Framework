@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("https://support.polyas.com/wp-content/uploads/2024/02/ballots.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100vw;
+            height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            justify-content:left;
+            align-content: center;
+            margin-top: 120px;
+        }
+        h1 {
+            text-align: center;
+            color: #007bff;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .vote-button {
+            padding: 5px 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .vote-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Voting Results</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Party Name</th>
+                    <th>Candidate Name</th>
+                    <th>Votes</th>
+                    <th>Vote</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Bharatiya Janata Party</td>
+                    <td>J. P. Nadda</td>
+                    <td id="votes-john">120</td>
+                    <td><button class="vote-button" onclick="vote('john')">Vote</button></td>
+                </tr>
+                <tr> 
+                    <td>Communist Party of India</td>
+                    <td>Sitaram Yechury</td>
+                    <td id="votes-jane">90</td>
+                    <td><button class="vote-button" onclick="vote('jane')">Vote</button></td>
+                </tr>
+                <tr>
+                    <td>Bahujan Samaj Party</td>
+                    <td>Mallikarjun Kharge</td>
+                    <td id="votes-michael">80</td>
+                    <td><button class="vote-button" onclick="vote('michael')">Vote</button></td>
+                </tr>
+                <tr>
+                    <td>Bharatiya Janata Party</td>
+                    <td>J. P. Nadda</td>
+                    <td id="votes-john">120</td>
+                    <td><button class="vote-button" onclick="vote('john')">Vote</button></td>
+                </tr>
+                <tr> 
+                    <td>Communist Party of India</td>
+                    <td>Sitaram Yechury</td>
+                    <td id="votes-jane">90</td>
+                    <td><button class="vote-button" onclick="vote('jane')">Vote</button></td>
+                </tr>
+                <tr>
+                    <td>Bahujan Samaj Party</td>
+                    <td>Mallikarjun Kharge</td>
+                    <td id="votes-michael">80</td>
+                    <td><button class="vote-button" onclick="vote('michael')">Vote</button></td>
+                </tr>
+                <!-- Add rows for other parties and candidates -->
+            </tbody>
+        </table>
+      
+    </div>
+
+    <script>
+        function vote(candidate) {
+            // Simulate voting process (you would replace this with actual AJAX request to your Django backend)
+            // For demo purpose, we'll just increase the vote count by 1
+            var voteCountElement = document.getElementById('votes-' + candidate);
+            var currentVotes = parseInt(voteCountElement.innerText);
+            voteCountElement.innerText = currentVotes + 1;
+        }
+    </script>
+</body>
+</html>

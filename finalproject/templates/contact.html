@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <style>
+        body{
+            display: flex;
+            align-content: center;
+           justify-content: center;
+           margin-top: 15px;
+           background-image: url("https://erepublic.brightspotcdn.com/dims4/default/45c77c9/2147483647/strip/true/crop/1020x532+0+48/resize/840x438!/quality/90/?url=http%3A%2F%2Ferepublic-brightspot.s3.us-west-2.amazonaws.com%2Fc0%2F81%2F5212633b7dfe4e4d7d6a657031fe%2Fshutterstock-1648710190.jpg");
+           background-size: cover;
+           background-position: center;
+        }
+
+        
+        .contact{
+            border: 1px solid black;
+            width: 600px;
+            height: 650px;
+            background-image: url("");
+            color: white;
+            border-radius: 20px;
+            box-shadow: 0px, 0px, 20px, rgba(0,0,0,0.75);
+            background-size: cover;
+            background-position: center;
+            overflow: hidden;
+        }
+
+        form{
+            display: block;
+            box-sizing: border-box;
+            padding: 40px;
+            width: 100%;
+            height: 100%;
+            backdrop-filter: brightness(50%);
+            flex-direction: column;
+            display: flex;
+            gap: 5px;
+        }
+
+        h1{
+            font-weight: normal;
+            font-size: 30PX;
+            text-shadow: 0px, 0px, 2px,rgba(0,0,0,0.5);
+            margin-bottom: 60px;
+        }
+
+        label{
+            color: white;
+            text-transform: uppercase;
+            font-size: 19px;
+            letter-spacing: 2px;
+            padding-left: 10px;
+        }
+
+        input{
+            background: rgba(255, 255, 255, 0.6);
+            height: 40px;
+            line-height: 40px;
+            border-radius: 20px;
+            padding: 0px, 20px;
+            border: none;
+            margin-bottom: 20px;
+            color: black;
+            font-weight: bold, ;
+            font-style: italic;
+            font-size: 17px;
+        }
+
+        textarea{
+          background: rgba(255, 255, 255, 0.6);
+          border-radius: 20px;
+          margin-bottom: 20PX;
+          font-weight: bold, ;
+          font-style: italic;
+          font-size: 17px;
+        }
+
+        button{
+            background: rgb(45, 126,231);
+            height: 40px;
+            line-height: 40px;
+            border-radius: 40px;
+            border: none;
+            margin: 10px, 0px;
+            box-shadow: 0px, 0px, 5px, rgba(0,0,0,0.3);
+            color: white;
+            font-size: 18px;
+            text-transform: uppercase;
+            margin-top: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="contact">
+        <form>
+            <h1>CONTACT US</h1>
+            <label>Name:</label>
+            <input type="text" required>
+            <label>Email/ Phone:</label>
+            <input type="email, tel" required>
+            <label>Voter ID:</label>
+            <input type="text" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+            <button>Submit</button>
+        </form>
+    </div>
+</body>
+</html>

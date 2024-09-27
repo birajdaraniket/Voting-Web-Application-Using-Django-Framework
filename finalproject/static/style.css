@@ -1,0 +1,83 @@
+h1 {
+    text-align: center;
+    color: #007bff; /* Blue color for the title */
+}
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: url('/images/voter.jpg'); /* Background image */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+  
+    .container {
+        max-width: 900px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+        border-radius: 15px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    }
+   
+    .nav-bar {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .nav-button {
+        padding: 10px 20px;
+        background-color: #007bff; /* Blue color for buttons */
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        margin: 0 10px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    .nav-button:hover {
+        background-color: #0056b3; /* Darker shade of blue on hover */
+    }
+    .welcome-msg {
+        text-align: center;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        margin-bottom: 20px;
+    }
+    .welcome-msg h2 {
+        color: #007bff; /* Blue color for heading */
+    }
+    p {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333; /* Dark grey color for paragraphs */
+    }
+    .features {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 20px;
+    }
+    .feature {
+        text-align: center;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    .feature h3 {
+        color: #007bff; /* Blue color for feature titles */
+    }
+    .feature p {
+        color: #333; /* Dark grey color for feature descriptions */
+    }
+    /* Adjustments for logo */
+    .logo {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        height: auto;
+        border-radius: 50%;
+    }
